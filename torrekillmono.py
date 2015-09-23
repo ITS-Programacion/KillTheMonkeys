@@ -28,9 +28,8 @@ def crear_mono():
     # Crear un enemigo nuevo
     enemigo = pilas.actores.Mono()
     # Hacer que se aparición sea con un efecto bonito
-    ##la escala varíe entre 0,25 y 0,75
+    ##la escala varíe entre 0,25 y 0,75 (Ojo con el radio de colisión)
     enemigo.escala = .5
-    #enemigo.escala = pilas.interpolar(0.5, duracion=0.5, tipo='elastico_final')
     # Dotarle de la habilidad de que explote al ser alcanzado por un disparo
     enemigo.aprender(pilas.habilidades.PuedeExplotar)
     # Situarlo en una posición al azar, no demasiado cerca del jugador
